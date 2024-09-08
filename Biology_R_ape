@@ -1,28 +1,58 @@
-Here are the key points of the article "ape 5.0: an environment for modern phylogenetics and evolutionary analyses in R":
+Here are the key points of the article "ape 5.0:
+an environment for modern phylogenetics and 
+evolutionary analyses in R":
 
 1. **Overview**:
-   - The article presents the updates made to the R package *ape* (Analysis of Phylogenetics and Evolution) with the release of version 5.0.
-   - It is a widely used package for evolutionary biology, integrating analyses of DNA sequences, phenotypes, and phylogenetic trees.
-   - *ape* has been downloaded approximately 22,000 times within a few days after each new release and cited in more than 600 journals across life, environmental, and even human sciences.
+   - The article presents the updates made to the
+R package *ape* (Analysis of Phylogenetics and 
+Evolution) with the release of version 5.0.
+   - It is a widely used package for evolutionary 
+biology, integrating analyses of DNA sequences, 
+phenotypes, and phylogenetic trees.
+   - *ape* has been downloaded approximately 22,000 
+times within a few days after each new release and 
+cited in more than 600 journals across life, 
+environmental, and even human sciences.
 
 2. **New Features in Version 5.0**:
-   - The package now supports all types of phylogenetic trees and networks, including reading phylogenetic networks from the extended Newick format using the new `read.evonet` function.
-   - Enhanced performance with new C code for reading Newick and NEXUS files, replacing the older R code.
-   - *ape* can handle significantly larger DNA sequences, thanks to the implementation of R's long vectors, supporting up to ≈4.4 petabases (Pb).
+   - The package now supports all types of phylogenetic 
+trees and networks, including reading phylogenetic 
+networks from the extended Newick format using the new 
+`read.evonet` function.
+   - Enhanced performance with new C code for reading 
+Newick and NEXUS files, replacing the older R code.
+   - *ape* can handle significantly larger DNA sequences,
+thanks to the implementation of R's long vectors, supporting 
+up to ≈4.4 petabases (Pb).
 
 3. **Improved Efficiency**:
-   - Key functions like `read.dna` and `read.tree` have seen substantial reductions in computing time when processing large files, as demonstrated in a table comparing previous versions to 5.0.
-   - The package now includes a new function `read.fastq` to process DNA reads from FASTQ files for high-throughput sequencing data analysis.
+   - Key functions like `read.dna` and `read.tree` have seen 
+substantial reductions in computing time when processing large 
+files, as demonstrated in a table comparing previous versions 
+to 5.0.
+   - The package now includes a new function `read.fastq` to 
+process DNA reads from FASTQ files for high-throughput sequencing 
+data analysis.
 
 4. **Parallel Computing**:
-   - *ape* now supports parallel computation, particularly for bootstrapping phylogenetic trees using the `boot.phylo` function, taking advantage of multicore systems.
+   - *ape* now supports parallel computation, particularly for 
+bootstrapping phylogenetic trees using the `boot.phylo` function, 
+taking advantage of multicore systems.
 
 5. **User-Friendly Enhancements**:
-   - New functions have been added to help users locate data files (`Xplorefiles` and `Xplor`), which can search for relevant files across the system.
-   - `comparePhylo` is a new function to compare two phylogenetic trees, providing both textual and graphical outputs.
-   - Improved label management to facilitate matching trees, sequences, and other data.
+   - New functions have been added to help users locate data 
+files (`Xplorefiles` and `Xplor`), which can search for relevant
+files across the system.
+   - `comparePhylo` is a new function to compare two phylogenetic 
+trees, providing both textual and graphical outputs.
+   - Improved label management to facilitate matching trees,
+sequences, and other data.
 
 6. **Applications**:
-   - With these upgrades, the *ape* package is well-suited to handle the increasing volumes of DNA data, contributing to studies on biodiversity and evolutionary biology.
+   - With these upgrades, the *ape* package is well-suited to 
+handle the increasing volumes of DNA data, contributing to studies 
+on biodiversity and evolutionary biology.
 
-This article emphasizes the ongoing development of *ape* to remain an essential tool for evolutionary analysis, particularly in handling big data from genomics.
+This article emphasizes the ongoing development of *ape* to remain 
+an essential tool for evolutionary analysis, particularly in handling 
+big data from genomics.
